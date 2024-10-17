@@ -177,4 +177,4 @@ hi! link diffAdded    DiffAdd
 hi! link diffRemoved  DiffDelete
 
 " Lazy
-hi! LazyNormal guifg=None
+execute 'hi LazyNormal' .guifg:none
