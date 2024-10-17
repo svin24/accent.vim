@@ -175,3 +175,6 @@ execute 'hi DiffText'   . s:fg_b1       . s:bg_red  . s:none
 
 hi! link diffAdded    DiffAdd
 hi! link diffRemoved  DiffDelete
+
+" Lazy
+hi! LazyNormal guifg=None
