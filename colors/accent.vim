@@ -5,11 +5,16 @@
 "
 " https://github.com/Alligator/accent.vim
 
-set background=dark
 hi clear
 
 if exists('syntax on')
   syntax reset
+endif
+
+if(&background == "dark")
+  	hi Normal guifg=#bcbfc4 ctermfg=250 guibg=NONE
+else
+	hi Normal guifg=#bcbfc4 ctermfg=250 guibg=NONE
 endif
 
 let g:colors_name = 'accent'
@@ -177,4 +182,4 @@ hi! link diffAdded    DiffAdd
 hi! link diffRemoved  DiffDelete
 
 " Lazy
-execute 'hi LazyNormal' . s:bg_none
+execute 'hi LazyNormal' . s:fg	. s:bg_none
