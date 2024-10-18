@@ -11,11 +11,7 @@ if exists('syntax on')
   syntax reset
 endif
 
-if(&background == "dark")
-  	hi Normal guifg=#bcbfc4 ctermfg=250 guibg=NONE
-else
-	hi Normal guifg=#bcbfc4 ctermfg=250 guibg=NONE
-endif
+" set background=dark
 
 let g:colors_name = 'accent'
 
@@ -181,5 +177,3 @@ execute 'hi DiffText'   . s:fg_b1       . s:bg_red  . s:none
 hi! link diffAdded    DiffAdd
 hi! link diffRemoved  DiffDelete
 
-" Lazy
-execute 'hi LazyNormal' . s:fg	. s:bg_none
